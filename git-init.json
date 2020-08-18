@@ -21,3 +21,4 @@ getData(url1,params1).then(data=>{
 }).then(data =>{
   // data 是url2的结果 
 })
+hhhhhhhhhhhhh 
