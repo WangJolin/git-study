@@ -1,0 +1,23 @@
+
+function getData(url,params){
+  const promise = new Promise((resolve,reject)=>{
+    // 请求接口
+    this.$http.post(url,params).then(()=>{
+      // 逻辑处理业务代码
+      resolve('xxxx ') // 
+    }).catch(()=>{
+      // ...
+    })
+   
+  })
+  return promise
+}
+
+// 获取结果
+getData(url1,params1).then(data=>{
+  // data是 url1获取的结果
+  // 如果还要获取url2的结果，接着写
+  return getData(url2,params2) // return 很重要！
+}).then(data =>{
+  // data 是url2的结果 
+})
